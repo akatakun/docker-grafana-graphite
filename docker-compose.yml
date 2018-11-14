@@ -13,5 +13,6 @@ services:
     volumes:
       - ./data/whisper:/opt/graphite/storage/whisper
       - ./data/grafana:/opt/grafana/data
+      - ./grafana/custom.ini:/opt/grafana/conf/custom.ini
       - ./log/graphite:/opt/graphite/storage/log
       - ./log/supervisor:/var/log/supervisor
