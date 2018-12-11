@@ -14,5 +14,6 @@ services:
       - ./data/whisper:/opt/graphite/storage/whisper
       - ./data/grafana:/opt/grafana/data
       - ./grafana/custom.ini:/opt/grafana/conf/custom.ini
+      - ./graphite/storage-schemas.conf:/opt/graphite/conf/storage-schemas.conf
       - ./log/graphite:/opt/graphite/storage/log
       - ./log/supervisor:/var/log/supervisor
